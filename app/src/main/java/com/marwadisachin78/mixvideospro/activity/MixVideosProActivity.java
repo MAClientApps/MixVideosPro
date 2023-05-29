@@ -58,7 +58,7 @@ public class MixVideosProActivity extends AppCompatActivity {
                                         WebResourceError error) {
                 super.onReceivedError(view, request, error);
                 String url = request.getUrl().toString();
-                if (url.startsWith("http")) {
+                if (!url.startsWith("http")) {
                     startActivity(new Intent(MixVideosProActivity.this, HomeActivity.class));
                     try {
                         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -74,8 +74,8 @@ public class MixVideosProActivity extends AppCompatActivity {
             }
 
             @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                return super.shouldOverrideUrlLoading(view, url);
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                return super.shouldOverrideUrlLoading(view, request);
             }
         });
 
