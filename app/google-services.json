@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "440979170250",
+    "project_id": "mixvideos-pro",
+    "storage_bucket": "mixvideos-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440979170250:android:54096b22e1c8d6808fe533",
+        "android_client_info": {
+          "package_name": "com.marwadisachin78.mixvideospro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm_UhhsiyOJE2quLCh9SwG0QwY9yTo5p0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
